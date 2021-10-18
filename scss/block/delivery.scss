@@ -1,0 +1,29 @@
+.delivery__list{
+    display: flex;   
+    padding: 103px 0 0 0;
+    text-align: center;
+    align-items: center;
+}
+
+.delivery__icon-1 {
+    padding-bottom: 28px;
+}
+
+.delivery__icon-2 {
+    padding-bottom: 19px;
+}
+
+.delivery__icon-3 {
+    padding-bottom: 25px;
+}
+
+.delivery__title {
+    @include font(20px, 24px, 300);
+    color: var(--cristal-white);
+}
+
+.delivery__text {
+    @include font(14px, 17px, 300);
+    color: var(--cristal-white);
+    padding: 16px 0 104px 0;
+}

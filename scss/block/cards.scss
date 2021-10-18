@@ -1,0 +1,112 @@
+.cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards__title {
+    @include font(30px, 36px, 400);
+    text-align: center;
+    padding: 0 0 6px 0;
+}
+
+.cards__title-text {
+    @include font(14px, 17px,400);
+    color: var(--gray);
+    text-align: center;  
+    padding: 0 0 48px 0;    
+}
+
+.cards__item {
+    width: 360px;
+    height: 581px;
+}
+
+.cards__img {
+    width: 100%;
+    height: 420px;
+}
+
+.cards__basket {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 13px 15px 13px 50px;
+    width: 138px;
+    height: 43px;
+}
+.cards__basket::before {
+    position: inherit;
+    content: '';
+    width: 100%;
+    height: 24px;
+    background-image: url(img/basket.svg);
+    background-repeat: no-repeat;
+    left: 8px;
+    bottom: 8px;
+
+}
+
+.cards__overlay {
+    position: relative;
+}
+
+.cards__overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+}
+
+.cards__overlay:before {
+    display: none;
+}
+
+.cards__item:hover .cards__basket,  
+.cards__item:hover .cards__overlay:before {
+display: block;
+} 
+
+.cards__subtitle {
+    @include font(13px, 16px, 400 bold);
+    text-transform: uppercase;
+    padding: 25px 0 13px 0;
+}
+
+.cards__text {
+    @include font(14px, 17px, 300);
+    color: var(--dark-gray);
+    padding: 0 0 18px 0;
+}
+
+.cards__price {
+    color: var(--dark-pink);
+    @include font(16px,19px,400);
+    text-decoration: none;
+}
+
+.cards__button {
+    @include font(16px,19px,400);
+    margin: 48px 0 95px 445px;
+    color: var(--red);
+    border: 1px solid #FF6A6A;
+    padding: 14px 38px;
+    display: block;   
+}
+
+.cards__button:hover ,
+.cards__button:focus {
+    cursor: pointer;
+    outline: none;
+    background: var(--dark-pink);
+    color: var(--white);
+}
