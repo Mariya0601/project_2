@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 32px;
+
+    
 }
 
 .cards__title {
@@ -101,6 +104,11 @@ display: block;
     border: 1px solid #FF6A6A;
     padding: 14px 38px;
     display: block;   
+
+    @include tablet {
+        margin: 0 auto;
+
+}
 }
 
 .cards__button:hover ,

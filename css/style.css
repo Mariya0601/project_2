@@ -35,20 +35,27 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 71%;
   margin: 0 auto;
 }
 
 @media (max-width: 1599px) {
   .container {
-    width: 736px;
+    width: 96%;
     margin: 0 auto;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
-    width: 311px;
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 91%;
     margin: 0 auto;
   }
 }
@@ -71,7 +78,7 @@ body {
   }
 }
 
-@media (max-width: 1599px) and (max-width: 767px) {
+@media (max-width: 1599px) and (max-width: 375px) {
   .header .header__container {
     padding: 0;
   }
@@ -123,7 +130,7 @@ body {
   background-color: var(--pink);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .hero {
     min-height: 363px;
   }
@@ -142,11 +149,11 @@ body {
 }
 
 .hero .hero__title {
-  font-family: Lato;
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
   font-style: normal;
+  font-family: Lato;
   text-transform: uppercase;
 }
 
@@ -159,7 +166,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .hero .hero__title {
     font-size: 38px;
     line-height: 46px;
@@ -169,11 +176,11 @@ body {
 }
 
 .hero .hero__subtitle {
-  display: block;
   font-size: 37px;
   line-height: 44px;
   font-weight: 700;
   font-style: normal;
+  display: block;
 }
 
 @media (max-width: 1599px) {
@@ -185,7 +192,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .hero .hero__subtitle {
     font-size: 20px;
     line-height: 24px;
@@ -200,13 +207,13 @@ body {
 
 @media (max-width: 1599px) {
   .hero .hero__img {
-    height: 369px;
+    height: 100%;
     width: 50%;
     object-fit: contain;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .hero .hero__img {
     display: none;
   }
@@ -218,18 +225,29 @@ body {
   padding-top: 64px;
 }
 
+@media (max-width: 375px) {
+  .sale__box {
+    flex-direction: column;
+  }
+}
+
 .sale__item {
-  width: 360px;
-  min-height: 260px;
+  width: 32%;
   text-align: center;
-  display: flex;
   align-items: center;
+  background-color: #524a4a;
+  padding: 105px 0;
 }
 
 @media (max-width: 1599px) {
   .sale__item {
-    width: 232px;
-    min-height: 168px;
+    width: 31.5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .sale__item {
+    width: 100%;
   }
 }
 
@@ -245,51 +263,36 @@ body {
   background-image: url(../img/sale-kids.jpg);
 }
 
-.sale__item-accesories {
-  background-image: url(../img/sale-accesories.jpg);
-  height: 180px;
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 97px;
-}
-
-@media (max-width: 1599px) {
-  .sale__item-accesories {
-    width: 100%;
-    min-height: 168px;
-  }
-}
-
-@media (max-width: 767px) {
-  .sale__item-accesories {
-    width: 100%;
-  }
-}
-
 .sale__link {
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.sale__link-women {
-  padding-left: 103px;
+.sale__item-accesories {
+  background-image: url(../img/sale-accesories.jpg);
+  margin-top: 30px;
+  align-items: center;
+  margin-bottom: 97px;
+  text-align: center;
+  padding: 65px 0;
 }
 
-.sale__link-men {
-  padding-left: 125px;
+@media (max-width: 1599px) {
+  .sale__item-accesories {
+    width: 100%;
+  }
 }
 
-.sale__link-kids {
-  padding-left: 125px;
+@media (max-width: 375px) {
+  .sale__item-accesories {
+    width: 100%;
+  }
 }
 
-.sale__text {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--white);
+.sale__link-accesories {
+  padding-left: 490px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .sale__subtitle {
@@ -300,16 +303,19 @@ body {
   color: var(--dark-pink);
 }
 
-.sale__link-accesories {
-  padding-left: 490px;
-  text-transform: uppercase;
-  text-decoration: none;
+.sale__text {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--white);
 }
 
 .cards__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 .cards__title {
@@ -429,6 +435,12 @@ body {
   display: block;
 }
 
+@media (max-width: 1599px) {
+  .cards__button {
+    margin: 0 auto;
+  }
+}
+
 .cards__button:hover,
 .cards__button:focus {
   cursor: pointer;
@@ -441,23 +453,29 @@ body {
   background-color: var(--dark-black);
 }
 
+.delivery {
+  background-color: var(--dark-black);
+  margin-top: 65px;
+}
+
 .delivery__list {
   display: flex;
   padding: 103px 0 0 0;
   text-align: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 48px 0 81px 0;
 }
 
-.delivery__icon-1 {
-  padding-bottom: 28px;
+@media (max-width: 1599px) {
+  .delivery__list {
+    flex-direction: column;
+    padding: 50px 0 64px 0;
+  }
 }
 
-.delivery__icon-2 {
-  padding-bottom: 19px;
-}
-
-.delivery__icon-3 {
-  padding-bottom: 25px;
+.delivery_icon {
+  padding-bottom: 20px;
 }
 
 .delivery__title {
@@ -477,6 +495,22 @@ body {
   padding: 16px 0 104px 0;
 }
 
+@media (max-width: 1599px) {
+  .delivery__text {
+    padding: 16px 0 48px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .delivery__text {
+    padding: 14px 0 46px 0;
+  }
+}
+
+.delivery__item {
+  width: 360px;
+}
+
 .face {
   background-image: url(../img/footer.jpg);
   display: flex;
@@ -490,6 +524,15 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 86px 0 156px 0;
+}
+
+@media (max-width: 1599px) {
+  .face__content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 53px;
+    padding-bottom: 0;
+  }
 }
 
 .face__img {
@@ -557,18 +600,18 @@ body {
   font-weight: 700;
 }
 
-.contacts {
+.contacts__box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.contacts .contacts__list {
+.contacts__list {
   display: flex;
   align-items: center;
 }
 
-.contacts .contacts__text {
+.contacts__text {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
@@ -577,11 +620,11 @@ body {
   color: var(--cristal-white);
 }
 
-.contacts .contacts__list {
+.contacts__list {
   display: flex;
 }
 
-.contacts .contacts__item {
+.contacts__item {
   padding: 7px;
 }
 
