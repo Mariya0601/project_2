@@ -1,0 +1,129 @@
+.loyalty__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 96px 0;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.loyalty__legend {
+    @include font(16px, 19px, 300 bold);
+    color: var(--black);
+    padding-bottom: 22px;
+
+}
+.loyalty__input {
+    @include font(13px, 16px, 300);
+    width: 360px;
+    height: 42px;
+    margin-bottom: 20px;
+    border: 1px solid #a4a4a4;
+    padding: 12px 15px;
+
+    @include mobile {
+        width: 306px;
+    }
+}
+
+.loyalty__button {
+    position: relative;
+    width: 167;
+    height: 50px;
+    background-color: var(--dark-pink);
+    color: var(--white);
+    text-transform: uppercase;
+    @include font(14px, 17px, 400);
+    padding: 16px 66px 16px 29px;
+    margin-top: 39px;
+}
+
+.loyalty__button::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/arrow_reg.svg);
+    background-repeat: no-repeat;
+    left: 119px;
+    bottom: 12px;
+}
+
+.loyalty__text {
+    color: var(--black-black);
+    width: 562px;
+
+    @include tablet {
+        padding-left: 22px;
+    }
+
+    @include mobile {
+        width: 326px;
+    }
+}
+.loyalty__title {
+    text-transform: uppercase;
+    @include font(24px, 29px, 300);
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
+    @include mobile {
+        padding: 40px 0 10px 0;
+    }
+}
+.loyalty__tit {
+    @include font(24px, 29px, 300);
+    padding: 22px 0;
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
+}
+.loyalty__list {
+    @include font(24px, 29px, 300);
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
+}
+.loyalty__item {
+    padding-bottom: 16px;
+    position: relative;
+
+    @include tablet {
+        padding-left: 60px;
+    }
+
+    @include mobile {
+        padding-left: 25px;
+    }
+}
+
+.loyalty__item::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/marker_reg.svg);
+    left: -45px;
+    bottom: 21px;
+
+    @include tablet {
+        left: 37px;
+    }
+
+    @include mobile {
+        left: 0px;
+    }
+}
+
+.loyalty__slogan {
+    @include font(13px, 24px, 300);
+    letter-spacing: 0em;
+    color: #B1B1B1;
+    width: 360px;
+
+}
+

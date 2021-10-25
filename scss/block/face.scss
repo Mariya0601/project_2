@@ -3,8 +3,15 @@
     display:flex;
     text-align: center;
     height: 448px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+
+    @include tablet {
+        height: 614px;
+    }
+
+    @include mobile {
+        height: 550px;
+    }
 }
 
 .face__content {
@@ -31,6 +38,11 @@
     height: 99px;
     width: 359px;
     text-align: center;
+
+    @include mobile {
+        width: 100%;
+        @include font(18px, 21px, 400);
+    }
 }
 
 .face__button {
@@ -53,6 +65,10 @@
     border-radius: 20px 0 0 20px;
     margin-right: -3px;
     padding-left: 22px;
+
+    @include mobile {
+        width: 200px;
+    }
 }
 
 .face__bold {
