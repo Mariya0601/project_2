@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".//css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Registration</title>
 </head>
 <body>
@@ -17,8 +20,8 @@
             </div>
             <div class="header__box">
                 <button class="header__button header__icon" type="button" id="burger"><img src="img/burger.svg" alt="menu" width="32" height="23"></button>
-                <a class="header__icon" href="registration.html"><img src="img/person.svg" alt="person" width="29" height="29"></a>
-                <a class="header__icon" href="./cart.html"><img src="img/basket.svg" alt="basket" width="32" height="29"></a>
+                <a class="header__icon header__icon_registration" href="./registration.html"><img src="img/person.svg" alt="person" width="29" height="29"></a>
+                <a class="header__icon header__icon_basket" href="./cart.html"><img src="img/basket.svg" alt="basket" width="32" height="29"></a>
                 <nav class="header__menu header__menu_show" id="menu">
                     <h2 class="header__title">menu</h2>
                     <ul class="header__menu-list">
@@ -63,99 +66,81 @@
                 </nav>
             </div>
         </div>
-</header>   
+    </header>   
     <main>
         <section class="page-info">
             <div class="container">
                 <h1 class="page-info__title">registration</h1>
             </div>
         </section>
-        <div class="container">
-                <section class="form">
-    <div></div>
-                    <form action="#">
-                        <fieldset>
-                            <legend class="form__legend">Your Name</legend>
-                                <label>
-                                    <input type="text" placeholder="First Name">
-                                    <span class="visually-hidden">First Name</span>
-                                </label> <br>
-                                <label>
-                                    <input type="text" placeholder="Last Name">
-                                    <span class="visually-hidden">Last Name</span>
-                                </label>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="form__legend">Login details</legend>
-                                <label>
-                                    <input type="email" placeholder="Email">
-                                    <span class="visually-hidden">Email</span>
-                                </label> <br>
-                                <label>
-                                    <input type="password" placeholder="Password">
-                                    <span class="visually-hidden">Password</span>
-                                </label>
-                                    </fieldset>
-                                        <button type="submit">join now</button>
-                    </form>
-                </section>
-                <section class="loyalty">
-                    <h2 class="loyalty-title">loyalty has its perks</h2>
-                    <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                    <ul class="loyalty-list">
-                        <li class="loyalty-item"></li>
-                        <li class="loyalty-item"></li>
-                        <li class="loyalty-item"></li>
-                        <li class="loyalty-item"></li>
-                        <li class="loyalty-item"></li>
-                    </ul>
-                </section>
-            </div> 
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <section class="delivery">
-                <ul class="delivery__list">
-                    <li class="delivery__item">
-                        <img class="delivery__icon-1" src="img/footer_img-1.svg" alt="foto of footer">
-                        <h4 class="delivery__title">Free Delivery</h4>
-                        <p class="delivery__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </li>
-                    <li class="delivery__item">
-                        <img class="delivery__icon-2" src="img/footer_img-2.svg" alt="foto of footer">
-                        <h4 class="delivery__title">Sales & discounts</h4>
-                        <p class="delivery__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </li>
-                    <li class="delivery__item">
-                        <img class="delivery__icon-3" src="img/footer_img-3.svg" alt="foto of footer">
-                        <h4 class="delivery__title">Quality assurance</h4>
-                        <p class="delivery__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </li>
-                </ul>
-            </section>
-        </div>
-            <section class="face">
-                <div class="container">
-                    <div class="face__content">
-                        <div class="face__quote">
-                            <img class="face__img" src="img/face.png" alt="face">
-                            <p class="face__title">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-                        </div>
-                        <div class="face__form">
-                            <p class="face__subtitle"><span class="face__bold"> subscribe</span> for our newletter and promotion</p>
-                                <form class="face__form" action="#">
-                                    <input class="face__text" type="text" placeholder=" Enter Your Email">
-                                    <button class="face__button" type="button">Subscribe</button>
-                                </form>  
-                        </div>
+        <section class="loyalty">
+            <div class="container">
+                <div class="loyalty__box">
+                    <div class="loyalty__form">
+                        <form action="#">
+                            <fieldset>
+                                <legend class="loyalty__legend">Your Name</legend>
+                                    <label>
+                                        <input class="loyalty__input" type="text" placeholder="First Name">
+                                        <span class="visually-hidden">First Name</span>
+                                    </label> <br>
+                                    <label>
+                                        <input class="loyalty__input" type="text" placeholder="Last Name">
+                                        <span class="visually-hidden">Last Name</span>
+                                    </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="loyalty__legend">Login details</legend>
+                                    <label>
+                                        <input class="loyalty__input" type="email" placeholder="Email">
+                                        <span class="visually-hidden">Email</span>
+                                    </label> <br>
+                                    <label>
+                                        <input class="loyalty__input" type="password" placeholder="Password">
+                                        <span class="visually-hidden">Password</span>
+                                    </label>
+                                        </fieldset>
+                                        <p class="loyalty__slogan">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                                            <button class="loyalty__button" type="submit">join now</button>
+                        </form>
+                    </div>
+                    <div class="loyalty__text">
+                        <h2 class="loyalty__title">loyalty has its perks</h2>
+                                    <p class="loyalty__tit">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                                    <ul class="loyalty__list">
+                                        <li class="loyalty__item">15% off welcome offer</li>
+                                        <li class="loyalty__item">Free shipping, returns and exchanges on all orders</li>
+                                        <li class="loyalty__item">$10 off a purchase on your birthday</li>
+                                        <li class="loyalty__item">Early access to products</li>
+                                        <li class="loyalty__item">Exclusive offers & rewards</li>
+                                    </ul>
                     </div>
                 </div>
-            </section>
-                <div class="container">
-                    <section class="contacts">
-                        <p class="contacts__text">© 2021  Brand  All Rights Reserved.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="face">
+            <div class="container">
+                <div class="face__content">
+                    <div class="face__quote">
+                        <img class="face__img" src="img/face.png" alt="face">
+                        <p class="face__title">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="face__form">
+                        <p class="face__subtitle"><span class="face__bold"> subscribe</span> for our newletter and promotion</p>
+                            <form class="face__form" action="#">
+                                <input class="face__text" type="text" placeholder=" Enter Your Email">
+                                <button class="face__button" type="button">Subscribe</button>
+                            </form>  
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section class="contacts">
+                    <div class="container">
                         <div class="contacts__box">
+                            <p class="contacts__text">© 2021  Brand  All Rights Reserved.</p>
                             <ul class="contacts__list">
                                 <li class="contacts__item">
                                     <a href="contacts__icon"><img src="img/icon_1.svg" alt="icon"></a>
@@ -172,8 +157,9 @@
                                 </li>
                             </ul>
                         </div>
-                    </section>
-                </div>    
-        </footer>
+                    </div>  
+                </section>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

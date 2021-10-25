@@ -1,24 +1,27 @@
-.contacts {
+.contacts__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    .contacts__list {
-        display: flex;
-        align-items: center
-    }
-    
-    .contacts__text {
-        @include font(16px, 19px, 400);
-        padding: 30px 0 30px 0 ;
-        color: var(--cristal-white);     
-    }
-    .contacts__list {
-        display: flex;
-    }
-    
-    .contacts__item {
-        padding: 7px;
+
+    @include mobile {
+        flex-direction: column;
     }
 }
+.contacts__list {
+    display: flex;
+    align-items: center
+}
+        
+.contacts__text {
+    @include font(16px, 19px, 400);
+    padding: 30px 0 30px 0 ;
+    color: var(--cristal-white);     
+}
+.contacts__list {
+    display: flex;  }
+        
+.contacts__item {
+    padding: 7px;
+        }
+
 

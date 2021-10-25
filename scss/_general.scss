@@ -20,20 +20,26 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
 @media (max-width: $desktop-width) {
     .container {
-        width: 736px;
+        width: 96%;
         margin: 0 auto;
     }  
+}
+@media (max-width: $tablet-width) {
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: $mobile-width) {
     .container {
-        width: 311px;
+        width: 91%;
         margin: 0 auto;
     }  
 }  

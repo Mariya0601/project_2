@@ -1,0 +1,10 @@
+.page-info {
+    padding: 60px 0;
+    text-transform: uppercase;
+    background-color:var(--light-pink);
+}
+.page-info__title {
+    @include font(24px, 29px, 400);
+    color: var(--dark-pink);
+
+}
