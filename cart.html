@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./reset.css">
-    <title>Cart</title>
+    <meta name="viewport" content="width=hed, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+<header class="header">
         <div class="container header__container">
             <div class="header__box">
                 <img class="header__logo" src="img/logo.svg" alt="logo" width="44" height="38">
@@ -17,8 +20,8 @@
             </div>
             <div class="header__box">
                 <button class="header__button header__icon" type="button" id="burger"><img src="img/burger.svg" alt="menu" width="32" height="23"></button>
-                <a class="header__icon" href="./registration.html"><img src="img/person.svg" alt="person" width="29" height="29"></a>
-                <a class="header__icon" href="cart.html"><img src="img/basket.svg" alt="basket" width="32" height="29"></a>
+                <a class="header__icon header__icon_registration" href="./registration.html"><img src="img/person.svg" alt="person" width="29" height="29"></a>
+                <a class="header__icon header__icon_basket" href="./cart.html"><img src="img/basket.svg" alt="basket" width="32" height="29"></a>
                 <nav class="header__menu header__menu_show" id="menu">
                     <h2 class="header__title">menu</h2>
                     <ul class="header__menu-list">
@@ -66,37 +69,108 @@
 </header>   
     <main>
         <section class="page-info">
-            <h1 class="page-info__title">Cart</h1>
+            <div class="container">
+                <h1 class="page-info__title">shopping cart </h1>
+            </div>
         </section>
-        
-            </section>
         <section class="cart">
-            <div class="cart__product">
-                <button type="">clear shopping cart</button>
-                <button type="">continue shopping</button>
-
+            <div class="container">
+                <div class="cart__wrp">
+                    <div class="cart__block">
+                        <div class="cart__box">
+                            <img src="./img/man-1-cart.jpg" alt="foto">
+                            <div class="cart_text">
+                                <h2 class="cart__title">mango people t-shirt</h2>
+                                                <ul class="cart__list">
+                                                    <li class="cart__item">Price: $300 	</li>
+                                                    <li class="cart__item">Color: Red</li>
+                                                    <li class="cart__item">Size: Xl	</li>
+                                                    <li class="cart__item">Quantity: <span>2</span>	</li>
+                                                </ul>
+                            </div>
+                        </div>
+                        <div class="cart__box">
+                            <img src="./img/man-2-cart.jpg" alt="foto">
+                            <div class="cart_text">
+                                <h2 class="cart__title">mango people t-shirt</h2>
+                                                <ul class="cart__list">
+                                                    <li class="cart__item">Price: $300 	</li>
+                                                    <li class="cart__item">Color: Red</li>
+                                                    <li class="cart__item">Size: Xl	</li>
+                                                    <li class="cart__item">Quantity: <span>2</span>	</li>
+                                                </ul>
+                            </div>
+                        </div>
+                        <div class="cart__button">
+                            <button class="cart__btn" type="">clear shopping cart</button>
+                            <button class="cart__btn" type="">continue shopping</button>
+                        </div>
+                    </div>
+                    <div class="cart__form">
+                        <form action="#">
+                            <fieldset>
+                                <legend class="cart__legend">shipping adress</legend>
+                                <label>
+                                    <input type="text" placeholder="Bangladesh">
+                                    <span class="visually-hidden">Bangladesh</span>
+                                </label> <br>
+                                <label>
+                                    <input type="text" placeholder="State">
+                                    <span class="visually-hidden">State</span>
+                                </label> <br>
+                                <label>
+                                    <input type="text" placeholder="Postcode / Zip">
+                                    <span class="visually-hidden">Postcode / Zip</span>
+                                </label>
+                            </fieldset>
+                            <button type="submit">get a quote</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="cart__form">
-                <form action="#">
-                    <fieldset>
-                        <legend class="cart__legend">shipping adress</legend>
-                        <label>
-                            <input type="text" placeholder="Bangladesh">
-                            <span class="visually-hidden">First Name</span>
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Last Name">
-                            <span class="visually-hidden">Last Name</span>
-                        </label>
-                    </fieldset>
-                    <button type="submit">join now</button>
-                </form>
-            </div>
-            <div class="cart__proceed"></div>
-
         </section>
-
     </main>
-        <footer></footer>
-</body>
-</html>
+    <footer class="footer">
+            <section class="face">
+                <div class="container">
+                    <div class="face__content">
+                        <div class="face__quote">
+                            <img class="face__img" src="img/face.png" alt="face">
+                            <p class="face__title">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                        </div>
+                        <div class="face__form">
+                            <p class="face__subtitle"><span class="face__bold"> subscribe</span> for our newletter and promotion</p>
+                                <form class="face__form" action="#">
+                                    <input class="face__text" type="text" placeholder=" Enter Your Email">
+                                    <button class="face__button" type="button">Subscribe</button>
+                                </form>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+                    <section class="contacts">
+                        <div class="container">
+                            <div class="contacts__box">
+                                <p class="contacts__text">© 2021  Brand  All Rights Reserved.</p>
+                                <ul class="contacts__list">
+                                    <li class="contacts__item">
+                                        <a href="contacts__icon"><img src="img/icon_1.svg" alt="icon"></a>
+                                    </li>
+                                    <a href=""></a>
+                                    <li class="contacts__item">
+                                        <a href="contacts__icon"><img src="img/icon_2.svg" alt="icon"></a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="contacts__icon"><img src="img/icon_3.svg" alt="icon"></a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="contacts__icon"><img src="img/icon_4.svg" alt="icon"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </section>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+    </html>

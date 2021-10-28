@@ -27,8 +27,7 @@
 }
 
 .sale__item-women {
-    background-image: url(../img/sale-women.jpg);
-    
+    background-image: url(../img/sale-women.jpg);   
 }
 
 .sale__item-men {
@@ -50,6 +49,7 @@
     margin-bottom: 97px;
     text-align: center;
     padding: 65px 0;
+    background-color: #524a4a;
 
     @include tablet {
         width: 100%;

@@ -10,3 +10,12 @@
     padding: 0 73px 11px 54px;
     color: var(--gray-rgb);
 }
+
+.menu-sub-item__item__button {
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    top: 15px;
+    right: 20px;
+}

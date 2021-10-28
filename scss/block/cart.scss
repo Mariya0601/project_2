@@ -1,0 +1,33 @@
+.cart__box {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 96px;
+}
+.cart__wrp {
+    display: flex;
+    justify-content: space-between;
+}
+.cart__title {
+    @include font(24px, 29px, 400);
+    letter-spacing: 0em;
+    color: var(--black);
+    padding-bottom: 42px;
+}
+.cart__item {
+    @include font(22px,26px, 400);
+    color: var(--gray-black);
+}
+
+.cart__button {
+    padding: 33px 0 128px 0;
+}
+.cart__btn {
+    padding: 16px 40px;
+}
+.cart__legend {
+    @include font(16px,19px, 300);
+    letter-spacing: 0em;
+}
+
+
+

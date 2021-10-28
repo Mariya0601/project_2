@@ -41,6 +41,7 @@
             @include font(20px, 24px,700);
         }
     }
+
     .hero__pink {
         color: var(--dark-pink);
     }
@@ -51,7 +52,7 @@
             width: 50%;
             object-fit: contain;
         }
-    
+
         @include mobile {
             display: none;
         }
