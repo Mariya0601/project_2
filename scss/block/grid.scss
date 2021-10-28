@@ -1,0 +1,17 @@
+.grid__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(3, 581px);
+    grid-gap: 15px;
+    grid-template-areas:'img1' 'img2' 'img3'
+                        'img4' 'img5' 'img6'
+                        'img7' 'img8' 'img9';
+}
+
+.grid__img {
+    width: 100%;
+    height: auto;
+}
+.btn btn-secondary dropdown-toggle {
+    text-transform: uppercase;
+}

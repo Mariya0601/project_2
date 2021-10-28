@@ -10,11 +10,10 @@
 
         @include tablet {
             padding: 0 16px;
-
+        }
         @include mobile {
             padding: 0;
-        }
-        }
+        } 
     }
     
     .header__menu {
@@ -35,9 +34,11 @@
             margin-left: -107px;
         }
     }
+
     .header__menu_show {
         display: block;
     }
+    
     .header__box {
         display: flex;
         position: relative;
